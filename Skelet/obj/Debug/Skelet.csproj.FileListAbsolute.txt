@@ -1,0 +1,9 @@
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\bin\Debug\Skelet.exe.config
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\bin\Debug\Skelet.exe
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\bin\Debug\Skelet.pdb
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\obj\Debug\Skelet.csprojResolveAssemblyReference.cache
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\obj\Debug\Skelet.Form1.resources
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\obj\Debug\Skelet.Properties.Resources.resources
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\obj\Debug\Skelet.csproj.GenerateResource.Cache
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\obj\Debug\Skelet.exe
+e:\users\teunissenstefan\documents\visual studio 2017\Projects\Skelet\Skelet\obj\Debug\Skelet.pdb
