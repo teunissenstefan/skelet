@@ -172,7 +172,43 @@ namespace Skelet
             }
             else if (keyData == (Keys.Tab))
             {
-                textBox1.SelectedText = "    ";
+                if (string.Empty == textBox1.SelectedText)
+                {
+                    textBox1.SelectedText = "    ";
+                }
+                else
+                {
+                    string[] lines = textBox1.Lines;
+                    int cursorLine = textBox1.GetFirstCharIndexFromLine(textBox1.GetLineFromCharIndex(textBox1.SelectionStart));
+                    for (int i = textBox1.GetLineFromCharIndex(textBox1.SelectionStart); i < textBox1.SelectedText.Split('\n').Length + textBox1.GetLineFromCharIndex(textBox1.SelectionStart); i++)
+                    {
+                        lines[i] = "    " + lines[i];
+                    }
+                    textBox1.Lines = lines;
+                    textBox1.SelectionStart = cursorLine;
+                }
+            }
+            else if (keyData == (Keys.Shift | Keys.Tab))
+            {
+                if (string.Empty == textBox1.SelectedText)
+                {
+                    string[] lines = textBox1.Lines;
+                    lines[textBox1.GetLineFromCharIndex(textBox1.SelectionStart)] = lines[textBox1.GetLineFromCharIndex(textBox1.SelectionStart)].TrimStart(' ');
+                    int cursorLine = textBox1.GetFirstCharIndexFromLine(textBox1.GetLineFromCharIndex(textBox1.SelectionStart));
+                    textBox1.Lines = lines;
+                    textBox1.SelectionStart = cursorLine;
+                }
+                else
+                {
+                    string[] lines = textBox1.Lines;
+                    int cursorLine = textBox1.GetFirstCharIndexFromLine(textBox1.GetLineFromCharIndex(textBox1.SelectionStart));
+                    for (int i= textBox1.GetLineFromCharIndex(textBox1.SelectionStart); i< textBox1.SelectedText.Split('\n').Length+ textBox1.GetLineFromCharIndex(textBox1.SelectionStart); i++)
+                    {
+                        lines[i] = lines[i].TrimStart(' ');
+                    }
+                    textBox1.Lines = lines;
+                    textBox1.SelectionStart = cursorLine;
+                }
             }
             else if (keyData == (Keys.Alt | Keys.Q))
             {
