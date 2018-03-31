@@ -7,8 +7,8 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{62139810-FC9A-4632-9280-876E8D676DAB}
 AppName=Skelet
-AppVersion=1.0
-;AppVerName=Skelet 1.0
+AppVersion=1.1
+;AppVerName=Skelet 1.1
 AppPublisher=Stefan Teunissen
 AppPublisherURL=http://www.stefanteunissen.nl
 AppSupportURL=http://www.stefanteunissen.nl
